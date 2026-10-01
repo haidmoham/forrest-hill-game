@@ -1,0 +1,10 @@
+const fs = require('node:fs');
+const path = require('node:path');
+const root = path.resolve(__dirname, '..');
+const output = path.join(root, 'public');
+fs.mkdirSync(output, { recursive: true });
+require('esbuild').buildSync({ entryPoints: [path.join(root, 'src/battle.js')], bundle: true, minify: true, format: 'iife', target: 'es2020', outfile: path.join(output, 'battle.js'), legalComments: 'inline' });
+const html = fs.readFileSync(path.join(root, 'src/battle.html'), 'utf8');
+fs.writeFileSync(path.join(output, 'index.html'), html);
+fs.writeFileSync(path.join(output, 'forrest-hill-game-offline.html'), html.replace('<script src="battle.js"></script>', '<script>' + fs.readFileSync(path.join(output, 'battle.js'), 'utf8').replace(/<\/script/gi, '<\\/script') + '</script>'));
+console.log('Built classroom game and offline copy');
