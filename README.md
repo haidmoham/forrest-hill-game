@@ -22,3 +22,11 @@ Original procedural toy-brick meshes and interface, rendered with Three.js. Pok√
 ## Verification
 
 Production build passes. Cloud-browser character selection and battle actions were checked with the illustrated fallback; hardware WebGL motion verification is separate. The previous rescue-game test suite is not represented as battle-game coverage.
+
+## Kids-feedback review pass (edition 04)
+
+This branch adds an opt-in turn-based fallback alongside default real-time movement, visible incoming-attack targets, obstacle collision, projectile streaks, wind-up/strike/recovery motion, and a stronger knockback Tail Smash. WASD/arrows or onscreen direction buttons move; close-range attacks can miss when too far away.
+
+New procedural fighters: Mega Venusaur, Charizard √ó Mega Lucario, Ribbon Eevee (pink/white hat and bow), Surfer Pikachu, Rhyhorn, Thermal Godzilla, and an original princess. Godzilla can evolve after two moves. 2v2 uses local tag teams with one reserve each, selected in the fighter picker; it is not simultaneous four-player or online multiplayer.
+
+The production classroom edition remains unchanged while this review branch is verified. Build/source validation is separate from rendered browser playtesting. The feedback photograph and personal classroom information are not included in this repository.
