@@ -40,3 +40,9 @@ The production classroom edition remains unchanged while this review branch is v
 - Walking motion follows actual movement; fighters face each other in 3D. Projectile timing follows damage timing. Illustrated mode now shows attack, impact, and shield cues.
 
 Verification: source-level checks covered movement release, mixed input, pause/cancel, mode and reserve setup, both tag-in directions, rematch, Tail Smash damage/knockback, misses, dodge/standing-hit behavior, turn-based protection, evolution, and CPU approach from 12 arena arrangements. These focused checks are separate from hardware WebGL, physical touch-device testing, and extended human balance playtesting. No permanent automated test suite was added.
+
+## Newsletter polish verification
+
+`npm test` runs 16 focused Node tests for picker focus/cancellation, paused redraw, audio failure containment, repeated splash/reset cleanup, keyboard movement-button input, tag-team rematch restoration, creator-link semantics, and byte-identical executable online/offline bundles. DOM, audio, and renderer doubles check control flow; they do not prove hardware WebGL or physical touch behavior.
+
+The newsletter pass leaves combat rules, move values, AI routing, match timing, and roster abilities unchanged. A small creator credit in setup and the footer links to the portfolio in a separate tab. There are no promotional cards or contact prompts. No analytics or tracking is added.
