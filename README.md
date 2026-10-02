@@ -43,6 +43,6 @@ Verification: source-level checks covered movement release, mixed input, pause/c
 
 ## Newsletter polish verification
 
-`npm test` runs 16 focused Node tests for picker focus/cancellation, paused redraw, audio failure containment, repeated splash/reset cleanup, keyboard movement-button input, tag-team rematch restoration, parent-link semantics, and byte-identical executable online/offline bundles. DOM, audio, and renderer doubles check control flow; they do not prove hardware WebGL or physical touch behavior.
+`npm test` runs 16 focused Node tests for picker focus/cancellation, paused redraw, audio failure containment, repeated splash/reset cleanup, keyboard movement-button input, tag-team rematch restoration, creator-link semantics, and byte-identical executable online/offline bundles. DOM, audio, and renderer doubles check control flow; they do not prove hardware WebGL or physical touch behavior.
 
-The newsletter pass leaves combat rules, move values, AI routing, match timing, and roster abilities unchanged. Parent-facing portfolio/contact links open a separate tab and appear in setup, after the final knockout, and as a small footer credit. No analytics or tracking is added.
+The newsletter pass leaves combat rules, move values, AI routing, match timing, and roster abilities unchanged. A small creator credit in setup and the footer links to the portfolio in a separate tab. There are no promotional cards or contact prompts. No analytics or tracking is added.
