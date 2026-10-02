@@ -5,7 +5,8 @@
   "description": "Toy-brick classroom battle game",
   "scripts": {
     "build": "node scripts/build.js",
-    "dev": "node scripts/dev.js"
+    "dev": "node scripts/dev.js",
+    "test": "node --test"
   },
   "engines": {
     "node": ">=20"
